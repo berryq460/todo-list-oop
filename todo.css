@@ -1,0 +1,53 @@
+body {
+  font: 1rem/1.3 'Open Sans', sans-serif;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+ }
+  
+   /* &:hover {
+      cursor: pointer;
+      background: tint(red, 30%);
+      border-bottom-color: shade(red, 10%);
+    
+        &:after {
+          font-family: 'FontAwesome', sans-serif;
+          content: "\f057"; 
+          position: absolute;
+          color: shade(red, 20%);
+          right: .5em;
+          top: 50%;
+          @include translateY(-50%);
+        }
+      
+    }
+   */ 
+.delete-task-button{
+    font-weight: bold;
+    color:darkred;
+    padding:5px;
+    font-size: 22;
+}
+.delete-task-button:hover{
+    cursor: pointer;
+}
+.todo-list{
+    margin:auto;
+    padding:10px;
+}
+
+.task{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px;
+    width:600px;
+    font-size:16px;
+    cursor: pointer; 
+}
+.task:nth-child(odd) {
+    background-color: rgba(127, 127, 127, 0.1);
+}
+.task--completed{
+    text-decoration: line-through;
+    text-decoration-color: white;
+}
